@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="no-js" lang="" xmlns="http://www.w3.org/1/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>奖项管理系统</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+</head>
+<body>
+<!--[if lt IE 10]>
+<p class="browsehappy">你正在使用一个<strong>过时的</strong>浏览器. 请到<a href="http://browsehappy.com/">这里</a>去升级你的浏览器以获得更佳的体验.</p>
+<![endif]-->
+
+<div class="container">
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">石大易签到</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/">主页</a></li>
+                    <li><a href="about">关于</a></li>
+                    <li><a href="contact">联系我们</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+
+    <article class="jumbotron">
+        <h1>创建新的奖项</h1>
+        <form method="post" action="/docreate">
+            <div class="form-group">
+                <label for="exampleInputEmail1">sno</label>
+                <input name="sno" type="text" class="form-control" id="exampleInputEmail1" placeholder="sno">
+                <label for="exampleInputEmail1">sname</label>
+                <input name="sname" type = "text" class = "form-control" hidden="true" >
+                <label for="exampleInputEmail1">ssex</label>
+                <input name="ssex" type="text" class="form-control" id="exampleInputEmail1" placeholder="ssex">
+                <label for="exampleInputEmail1">sage</label>
+                <input name="sage" type = "text" class = "form-control" hidden="true" >
+                <label for="exampleInputEmail1">major</label>
+                <input name="major" type="text" class="form-control" id="exampleInputEmail1" placeholder="名称">
+            </div>
+
+            <button type="submit" class="btn btn-default">确认创建</button>
+        </form>
+    </article>
+
+    <div class="footer">
+        <p><span class="glyphicon glyphicon-heart"></span> from the UPCyiban - skyADMIN</p>
+    </div>
+</div>
+
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+
+<!-- endbower -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.js"></script>
+<!-- endbuild -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<!-- build:js(.tmp) scripts/main.js -->
+<script src="../scripts/main.js"></script>
+<!-- endbuild -->
+
+<!-- endbuild -->
+
+<!-- Baidu Analytics-->
+<script>
+
+</script>
+</body>
+</html>
