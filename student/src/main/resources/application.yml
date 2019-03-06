@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://121.251.255.96:3306/yibantest?useSSL=false
+    url: jdbc:mysql://localhost:3306/yibantest?useSSL=false
     username: yibantest
     password: yibantest
     test-while-idle: true
